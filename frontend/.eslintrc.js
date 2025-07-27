@@ -17,7 +17,9 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@next/next/recommended',
         'prettier',
+        'plugin:@typescript-eslint/recommended',
     ],
+    parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -28,6 +30,7 @@ module.exports = {
             presets: ['@babel/preset-react'],
         },
     },
+
     rules: {
         'import/prefer-default-export': 0,
         'no-console': 'warn',
@@ -47,5 +50,9 @@ module.exports = {
         'react/react-in-jsx-scope': 0,
         'linebreak-style': ['error', 'unix'],
         semi: ['error', 'never'],
+        'react/jsx-filename-extension': [
+            1,
+            { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+        ],
     },
 }
