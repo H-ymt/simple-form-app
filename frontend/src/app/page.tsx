@@ -9,6 +9,7 @@ const Home = () => {
         <>
             <div>
                 <LoginLinks />
+                <h1>Hello!! Next.js</h1>
             </div>
         </>
     )
